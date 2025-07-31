@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boder-box;
+    
+}
+
+body{
+     min-height:170vh;
+     background-color:#dfd5ff;
+     
+}
+
+.content{
+          max-width:900px;
+          background-color:rgb(255,255,255);
+          margin:50px Auto;
+          border-radius:5px;
+          box-shadow:4px 3px 5px rgba(1,1,1,0.1);
+}
+
+.content h1{
+    padding:20px;
+    font-size:45px;
+    font-family:'segoe ui',tahoma,Geneva,verdana,sans-serif;
+    
+}
+
+. content span{
+           font-size:25px;
+           color:#aabce2;
+}
+
+.form-container{
+          display:grid; grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+          gap:40px;
+          margin:0 20px;
+          
+}
+
+.from control{
+       display:flex;
+       flex-direction:column;
+}
+
+label{
+    font-size:15px;
+    font-family:'segoe ui',tahoma,Geneva,verdana,sans-serif;
+    font-weight:bold;
+    margin-bottom:5px;
+    
+}
+
+input, select,textarea{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+input,select,textarea:focus{
+    outline-color:red;
+}
+
+.button-container{
+    padding:30px;
+    display:flex;
+    justify-content: end;
+}
+
+button{
+    background-color:red;
+    padding:8px 15px;
+    border: transparent solid 2px;
+    border-radius:5px;
+    color:white;
+    transition:0.3s ease-in;
+    
+}
+
+button-hover{
+    cursor:pointer;
+    background-color:#ccc;
+    border:2px solid red;
+    color:black;
+    transition:0.3s ease-out;
+    
+}
+
+.textarea-control{
+    grid-column:1 / span 2;
+}
+
+.textarea-control textarea{
+    width:100%;
+}
+
+@media(max-width:750px){
+    .textarea-control{
+        grid-column:1 / span 1;
+    }
+}
